@@ -1,0 +1,116 @@
+.site-footer {
+  background: #0b0c0d;
+  border-top: 1px solid var(--color-border);
+  padding: clamp(56px, 8vw, 96px) 0 calc(32px + env(safe-area-inset-bottom));
+  position: relative;
+}
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: min(220px, 30%);
+  height: 2px;
+  background: var(--color-brand);
+}
+
+.site-footer__top {
+  display: grid;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+@media (min-width: 720px) {
+  .site-footer__top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .site-footer__top {
+    grid-template-columns: 1.4fr 1fr 1.2fr 0.8fr;
+  }
+}
+
+.site-footer__tagline {
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+}
+
+.site-footer__h {
+  font-size: 0.95rem;
+  letter-spacing: 0.22em;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+}
+
+.site-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.site-footer__list a {
+  color: var(--color-text-secondary);
+  transition: color var(--motion-fast);
+}
+.site-footer__list a:hover {
+  color: #fff;
+}
+.site-footer__contact li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.site-footer__contact svg {
+  margin-top: 5px;
+  color: var(--color-brand);
+  flex: none;
+}
+
+.site-footer__pending {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+}
+
+.site-footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+.site-footer__social a {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-silver);
+  transition:
+    border-color var(--motion-fast),
+    color var(--motion-fast);
+}
+.site-footer__social a:hover {
+  border-color: var(--color-brand);
+  color: #fff;
+}
+
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 24px;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+.site-footer__pos {
+  font-family: var(--font-heading);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}

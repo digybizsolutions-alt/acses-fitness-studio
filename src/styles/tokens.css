@@ -1,0 +1,38 @@
+:root {
+  /* Brand palette (requirements §4) */
+  --color-bg: #101112;
+  --color-surface: #242729;
+  --color-surface-elevated: #303437;
+  --color-brand: #e32620;
+  --color-brand-hover: #bd1f1a;
+  --color-silver: #c5c7c9;
+  --color-text: #ffffff;
+  --color-text-secondary: #c5c7c9;
+  --color-text-muted: #a7aaad;
+  --color-border: #414548;
+  --color-success: #4cc38a;
+
+  /* Typography */
+  --font-heading: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', sans-serif-condensed, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --fs-display: clamp(3rem, 6.3vw, 6.6rem);
+  --fs-h1: clamp(2.6rem, 6vw, 5rem);
+  --fs-h2: clamp(2.1rem, 4.4vw, 3.6rem);
+  --fs-h3: clamp(1.35rem, 2vw, 1.7rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  /* Shape & motion */
+  --radius-card: 12px;
+  --radius-button: 6px;
+  --motion-fast: 180ms;
+  --motion-standard: 300ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Layout */
+  --container: 1240px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --section-y: clamp(72px, 10vw, 140px);
+  --header-h: 76px;
+}
